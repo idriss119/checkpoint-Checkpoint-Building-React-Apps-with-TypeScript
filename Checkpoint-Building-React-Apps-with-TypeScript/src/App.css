@@ -1,0 +1,111 @@
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.app-container {
+  padding: 20px;
+  background-color: #1e1e1e;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+
+.button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.modal-content {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #555;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #222;
+  color: #e0e0e0;
+}
+
+.modal-buttons {
+  margin-top: 10px;
+}
+
+.modal-button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal-button-submit {
+  background-color: #007bff;
+  color: white;
+}
+
+.modal-button-submit:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.modal-button-close {
+  background-color: #555;
+  color: #e0e0e0;
+}
+
+.modal-button-close:hover {
+  background-color: #777;
+  transform: scale(1.05);
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
